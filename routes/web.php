@@ -16,3 +16,31 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/teste', function(){
+    return view('teste');
+});
+
+Route::get('/psicologia', function(){
+    return view('psicologia');
+});
+
+
+// Route::get('teste', 'TabelaTestesController@create');
+ Route::post('/teste/store' , 'App\Http\Controllers\TabelaTestesController@store');
+ Route::post('/psicologia/store' , 'App\Http\Controllers\PsicoController@store');
+
+
+
+
+    // Route::post('teste/store', function () {
+
+    //     $teste = \App\Models\teste::create([
+    //         'nome' => 'massive',
+    //         'sobrenome' => 'assinacao',
+    //         'sexo' => 'indefinido'
+    //     ]);
+
+    //     return \App\Models\teste::all();
+
+    // });
