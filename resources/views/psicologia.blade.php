@@ -64,7 +64,7 @@
         <form action="/psicologia/store" method="post">
             @csrf
             @method('POST')
-
+{{--
             <div class="row col-md-12">
 
 
@@ -100,7 +100,7 @@
                 <div class="col-md-3 ">
                     <input type="text" class="form-group ">
                 </div>
-            </div>
+            </div> --}}
             <div class="row ">
                 <h3>Motivo de consulta</h3>
                 <textarea name="motivo_consulta" cols="100% " rows="10"></textarea>
