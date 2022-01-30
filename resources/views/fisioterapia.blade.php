@@ -78,7 +78,7 @@
     <div class="container col-md-12">
         <form action="" method="post">
             <h1>ANAMNESE FISIOTERAPÊUTICA</h1>
-            <h6>DADOS PESSOAIS</h6>
+            {{-- <h6>DADOS PESSOAIS</h6>
             <div>
                 <label> Nome:  </label>
                 <input type="text" name="nome" id="nome">
@@ -106,8 +106,8 @@
                 <label>Ocupação principal: </label>
                 <input type="text" name="nome" id="nome">
             </div>
-            <hr>
-            <h3> ANAMNESE </h3>
+            <hr> --}}
+            {{-- <h3> ANAMNESE </h3> --}}
             <h6> Queixa principal: </h6>
             <textarea name="queixa_principal" id="" cols="30" rows="10"></textarea>
             <h6> Diagnóstico médico: </h6>
