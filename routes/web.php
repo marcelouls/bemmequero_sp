@@ -25,10 +25,19 @@ Route::get('/psicologia', function(){
     return view('psicologia');
 });
 
+Route::get('/fisioterapia', function(){
+    return view('fisioterapia');
+});
+
+Route::get('/paciente', function(){
+    return view('paciente');
+});
+
 
 // Route::get('teste', 'TabelaTestesController@create');
  Route::post('/teste/store' , 'App\Http\Controllers\TabelaTestesController@store');
  Route::post('/psicologia/store' , 'App\Http\Controllers\PsicoController@store');
+ Route::post('/paciente/store', 'App\Http\Controllers\PacienteController@store');
 
 
 

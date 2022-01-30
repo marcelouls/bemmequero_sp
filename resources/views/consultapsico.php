@@ -61,9 +61,14 @@
     <div class="container">
         <h1>ANAMNESE PSICOLOGIA</h1>
         <hr>
-        <form action="/psicologia/store" method="post">
+        <form action="/psicologia/consulta" method="post">
             @csrf
             @method('POST')
+
+            <label>CPF</label>
+            <input type="number" name="cpf" id="cpf">
+
+            <hr>
 
             <div class="row col-md-12">
 
