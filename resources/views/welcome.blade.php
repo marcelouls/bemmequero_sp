@@ -24,7 +24,7 @@
     </head>
     <body>
         <div class="container" >
-            <img src="/img/processed.jpeg" alt="logo">
+            <a href="{{route('login')}}"><img src="/img/processed.jpeg" alt="logo"></a>
         </div>
     </body>
 </html>
