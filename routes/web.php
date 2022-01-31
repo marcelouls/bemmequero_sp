@@ -32,6 +32,9 @@ Route::get('/fisioterapia', function(){
 Route::get('/paciente', function(){
     return view('paciente');
 });
+Route::get('/nutricao', function(){
+return view('nutricao');
+});
 
 
 // Route::get('teste', 'TabelaTestesController@create');
