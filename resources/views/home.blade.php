@@ -15,19 +15,17 @@
                     @endif
 
                     <div class="container">
-                        <h3>Psicologia</h3>
-                        <button type="submit" class="btn btn-lg btn-success">Pacientes</button>
-                        <button type="submit" class="btn btn-lg btn-primary">Anamnese</button>
+                        <h3>Pacientes</h3>
+                       <a href="paciente"> <button type="submit" class="btn btn-lg btn-success">Cadastro Pacientes</button></a>
+
                     </div>
+
                     <hr>
                     <div class="container">
-                        <h3>Fisioterapia</h3>
-                        <button type="submit" class="btn btn-lg btn-primary">Consultar</button>
-                    </div>
-                    <hr>
-                    <div class="container">
-                        <h3>Nutricao</h3>
-                        <button type="submit" class="btn btn-lg btn-primary">Consultar</button>
+                        <h3>Anamnese</h3>
+                      <a href="nutricao">  <button type="submit" class="btn btn-lg btn-primary">Nutrição</button> </a>
+                      <a href="fisioterapia"> <button type="submit" class="btn btn-lg btn-primary">Fisioterapia</button></a>
+                      <a href="psicologia"> <button type="submit" class="btn btn-lg btn-primary">Psicologia</button> </a>
                     </div>
 
 
