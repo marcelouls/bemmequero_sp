@@ -15,17 +15,75 @@
                     @endif
 
                     <div class="container">
-                        <h3>Pacientes</h3>
-                       <a href="paciente"> <button type="submit" class="btn btn-lg btn-success">Cadastro Pacientes</button></a>
+
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Pacientes
+                            </h2>
+                            <div class="logo">
+                                <img src="/img/pesoa.jpg" alt="logo">
+                            </div>
+
+                            <a href="paciente" class="btn btn-success">
+                                Cadastro
+                            </a>
+                        </div>
+
 
                     </div>
 
                     <hr>
                     <div class="container">
-                        <h3>Anamnese</h3>
-                      <a href="nutricao">  <button type="submit" class="btn btn-lg btn-primary">Nutrição</button> </a>
-                      <a href="fisioterapia"> <button type="submit" class="btn btn-lg btn-primary">Fisioterapia</button></a>
-                      <a href="psicologia"> <button type="submit" class="btn btn-lg btn-primary">Psicologia</button> </a>
+
+                      <div class="row">
+
+                      <div class="card col-md-4" >
+
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Psicologia
+                            </h2>
+                            <div class="logo">
+                                <img src="/img/logopsi.jpg" alt="logo">
+                            </div>
+
+                            <a href="psicologia" class="btn btn-success">
+                                Anamnese
+                            </a>
+                        </div>
+                      </div>
+                      <div class="card col-md-4" >
+
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Nutrição
+                            </h2>
+                            <div class="logo">
+                                <img src="/img/logonutri.jpg" alt="logo">
+                            </div>
+
+                            <a href="nutricao" class="btn btn-success">
+                                Anamnese
+                            </a>
+                        </div>
+                      </div>
+                      <div class="card col-md-4" >
+
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Fisioterapia
+                            </h2>
+                            <div class="logo">
+                                <img src="/img/logofisio.jpg" alt="logo">
+                            </div>
+
+                            <a href="fisioterapia" class="btn btn-success">
+                                Anamnese
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
                     </div>
 
 

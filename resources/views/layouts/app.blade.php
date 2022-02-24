@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'laravel') }}</title>
+    <title>{{ config('app.name', 'Bemmequero') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -25,12 +25,61 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
+
+<style>
+    body {
+        padding: auto;
+        background-color: lightgray;
+    }
+
+    input[type=text] {
+        width: 100%;
+        border-color: cornflowerblue;
+        border-radius: 5px;
+    }
+
+    input[type=checkbox] {
+        background-color: brown;
+        height: 18px;
+        width: 18px;
+    }
+
+    input[type=radio] {
+        height: 20px;
+        width: 20px;
+    }
+
+    textarea {
+        border-color: cornflowerblue;
+        border-radius: 5px;
+        height: 100px;
+        width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h6 {
+        text-align: center;
+        color: rgb(120, 95, 143);
+    }
+
+    label {
+        display: inline-block;
+    }
+
+    button {
+        margin-top: 15px;
+        margin-left: 45%;
+    }
+
+</style>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'laravel') }}
+                <a class="navbar-brand" href="{{ url('/') }}"> Bemmequero
+                    {{-- {{ config('app.name', 'Bemmequero') }} --}}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -67,7 +116,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{-- {{ __('Logout') }} --}} Sair
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

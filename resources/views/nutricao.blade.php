@@ -1,67 +1,7 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bemmequero</title>
-    <link rel="stylesheet" href="">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-</head>
-<style>
-    body {
-        padding: auto;
-        background-color: lightgray;
-    }
-
-    input[type=text] {
-        width: 100%;
-        border-color: cornflowerblue;
-        border-radius: 5px;
-    }
-
-    input[type=checkbox] {
-        background-color: brown;
-        height: 18px;
-        width: 18px;
-    }
-
-    input[type=radio] {
-        height: 20px;
-        width: 20px;
-    }
-
-    textarea {
-        border-color: cornflowerblue;
-        border-radius: 5px;
-        height: 100px;
-        width: 100%;
-    }
-
-    h1,
-    h2,
-    h3,
-    h6 {
-        text-align: center;
-        color: rgb(120, 95, 143);
-    }
-
-    label {
-        display: inline-block;
-    }
-
-    button {
-        margin-top: 15px;
-        margin-left: 45%;
-    }
-
-</style>
-
-<body>
+@section('content')
     <div class="container col-md-12">
         <h1>ANAMNESE NUTRICAO</h1>
         <hr>
@@ -913,6 +853,4 @@
 
         </form>
     </div>
-</body>
-
-</html>
+    @endsection
