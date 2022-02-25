@@ -18,9 +18,9 @@
                 <h3>Evolução da queixa  </h3>
                 <label for="inicio_queixa">Inicio da queixa</label>
                 <textarea name="inicio_queixa" cols="100% " rows="10"></textarea>
-                <label for="mudanca_queixa">Inicio da queixa</label>
+                <label for="mudanca_queixa">Mudança da queixa</label>
                 <textarea name="mudanca_queixa" cols="100% " rows="10"></textarea>
-                <label for="sintomas_queixa">Inicio da queixa</label>
+                <label for="sintomas_queixa">Sintomas</label>
                 <textarea name="sintomas_queixa" cols="100% " rows="10"></textarea>
 
             </div>
@@ -82,7 +82,7 @@
 
                 <div class="row col-md-12 ">
                     <label class="col-md-2 ">Outro </label>
-                    <input type="text" class="col-md-10" name="outro_tipo_alimentacao" value="1">
+                    <input type="text" class="col-md-10" name="outro_tipo_alimentacao" >
                 </div>
                 <hr>
                 <label>Episódios de descontrole alimentar:
@@ -114,9 +114,9 @@
                 <div class="col-md-12 ">
                     <h3>Atividade física :</h3>
                     <label>Atividad practicada</label>
-                    <input type="text" name="atividade_fisica" value="1">
+                    <input type="text" name="atividade_fisica" >
                     <label>Frecuencia : </label>
-                    <input type="text" name="frequencia_atividade" value="1">
+                    <input type="text" name="frequencia_atividade" >
 
                     <h5>Nivel de esforço: </h5>
 
@@ -133,23 +133,41 @@
                     <label>Perder gordura</label><input type="radio" name="objetivo_fisico" id="perder " value="3 "><br>
                     <div class="row col-md-12 ">
                         <label class="col-md-2 ">Outro</label>
-                        <input type="text" class="col-md-10" name="outro_objetivo" value="1">
+                        <input type="text" class="col-md-10" name="outro_objetivo" >
                     </div>
 
 
                 </div>
             </div>
             <div class="row ">
-                <h3>Antecedentes pessoais, familiares e sociais</h3>
+                <h3>Antecedentes médicos/psiquiátricos</h3>
                 <textarea name="antecedentes_pessoais" cols="100% " rows="10 "></textarea>
             </div>
             <div class="row ">
-                <h3>Valoração do estado psicológico</h3>
+                <h3>Antecedentes familiares</h3>
                 <textarea name="valoracao_estado" cols="100% " rows="10 "></textarea>
             </div>
             <div class="row ">
-                <h3>Hipóteses diagnostica</h3>
+                <h3>Relacionamento social/amoroso/laboral</h3>
                 <textarea name="hipotese" cols="100% " rows="10 "></textarea>
+            </div>
+            <div class="row ">
+                <h3>Valoração estado psicológico  </h3>
+                <label for="iniciar_desistir">Motivação Iniciar/desistir:</label>
+                <textarea name="iniciar_desistir" cols="100% " rows="10"></textarea>
+                <label for="concientizacao">Conscientização:</label>
+                <textarea name="concientizacao" cols="100% " rows="10"></textarea>
+                <label for="percepcao_corporal">Percepção corporal</label>
+                <textarea name="percepcao_corporal" cols="100% " rows="10"></textarea>
+
+            </div>
+            <div class="row ">
+                <h3>Histórico de dietas</h3>
+                <textarea name="historico_dietas" cols="100% " rows="10 "></textarea>
+            </div>
+            <div class="row ">
+                <h3>Hipótese diagnostica</h3>
+                <textarea name="hipotese_diagnostica" cols="100% " rows="10 "></textarea>
             </div>
             <div class="row ">
                 <h3>Objetivos terapêuticos</h3>
@@ -158,6 +176,10 @@
             <div class="row ">
                 <h3>Plano de intervenção</h3>
                 <textarea name="plano_intervencao" cols="100% " rows="10 "></textarea>
+            </div>
+            <div class="row ">
+                <h3>Observações</h3>
+                <textarea name="observacoes" cols="100% " rows="10 "></textarea>
             </div>
 
             <button class="btn btn-lg btn-success ">Salvar</button>

@@ -47,8 +47,8 @@
                                 <img src="/img/logopsi.jpg" alt="logo">
                             </div>
 
-                            <a href="psicologia" class="btn btn-success">
-                                Anamnese
+                            <a href="psicologia"><button class="btn btn-success">
+                                Anamnese</button>
                             </a>
                         </div>
                       </div>
@@ -62,8 +62,8 @@
                                 <img src="/img/logonutri.jpg" alt="logo">
                             </div>
 
-                            <a href="nutricao" class="btn btn-success">
-                                Anamnese
+                            <a href="nutricao"><button class="btn btn-success">
+                                Anamnese </button>
                             </a>
                         </div>
                       </div>
@@ -77,8 +77,8 @@
                                 <img src="/img/logofisio.jpg" alt="logo">
                             </div>
 
-                            <a href="fisioterapia" class="btn btn-success">
-                                Anamnese
+                            <a href="fisioterapia"><button class="btn btn-success">
+                                Anamnese </button>
                             </a>
                         </div>
                       </div>
