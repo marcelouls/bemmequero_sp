@@ -2,55 +2,27 @@
 
 @section('content')
     <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
         <h1>ANAMNESE PSICOLOGIA</h1>
         <hr>
         <form action="/psicologia/store" method="post">
             @csrf
             @method('POST')
-{{--
-            <div class="row col-md-12">
 
-
-                <h3>Dados pessoais:</h3>
-
-
-            </div>
-            <div class="row col-md-12">
-                <div class="col-md-4">
-                    <label>Nome : </label>
-                </div>
-                <div class="col-md-8">
-                    <input type="text" class="form-group">
-                </div>
-            </div>
-
-            <div class=" row col-md-12 ">
-                <div class="col-md-1 ">
-                    <label>Idade :</label>
-                </div>
-                <div class="col-md-3 ">
-                    <input type="text" class="form-group ">
-                </div>
-                <div class="col-md-1 ">
-                    <label>Gênero:</label>
-                </div>
-                <div class="col-md-3 ">
-                    <input type="text" class="form-group ">
-                </div>
-                <div class="col-md-1 ">
-                    <label>Profissão:</label>
-                </div>
-                <div class="col-md-3 ">
-                    <input type="text" class="form-group ">
-                </div>
-            </div> --}}
             <div class="row ">
                 <h3>Motivo de consulta</h3>
                 <textarea name="motivo_consulta" cols="100% " rows="10"></textarea>
             </div>
             <div class="row ">
-                <h3>História do MC</h3>
-                <textarea name="historia_mc" cols="100% " rows="10"></textarea>
+                <h3>Evolução da queixa  </h3>
+                <label for="inicio_queixa">Inicio da queixa</label>
+                <textarea name="inicio_queixa" cols="100% " rows="10"></textarea>
+                <label for="mudanca_queixa">Inicio da queixa</label>
+                <textarea name="mudanca_queixa" cols="100% " rows="10"></textarea>
+                <label for="sintomas_queixa">Inicio da queixa</label>
+                <textarea name="sintomas_queixa" cols="100% " rows="10"></textarea>
+
             </div>
 
             <div class="row col-md-12" style=" border: 1px solid black;">
@@ -190,5 +162,7 @@
 
             <button class="btn btn-lg btn-success ">Salvar</button>
         </form>
+    </div>
+        </div>
     </div>
 @endsection

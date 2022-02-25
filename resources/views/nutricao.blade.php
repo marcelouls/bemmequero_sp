@@ -2,7 +2,8 @@
 
 
 @section('content')
-    <div class="container col-md-12">
+<div class="row justify-content-center">
+    <div class="col-md-8">
         <h1>ANAMNESE NUTRICAO</h1>
         <hr>
         <form action="/nutricao/store" method="post">
@@ -853,4 +854,5 @@
 
         </form>
     </div>
+</div>
     @endsection

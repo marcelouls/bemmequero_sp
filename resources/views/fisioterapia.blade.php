@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container col-md-12">
+<div class="row justify-content-center">
+    <div class="col-md-8">
         <form action="" method="post">
             <h1>ANAMNESE FISIOTERAPÊUTICA</h1>
 
@@ -402,4 +403,5 @@
 
         </form>
     </div>
+</div>
 @endsection
