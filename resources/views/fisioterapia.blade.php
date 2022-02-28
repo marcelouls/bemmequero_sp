@@ -6,6 +6,15 @@
         <form action="" method="post">
             <h1>ANAMNESE FISIOTERAPÊUTICA</h1>
 
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="cpf">C.P.F</label>
+                </div>
+                <div class="col-md-9">
+                    <input type="text">
+                </div>
+            </div>
+
             <h6> Queixa principal: </h6>
             <textarea name="queixa_principal" id="" cols="30" rows="10"></textarea>
             <h6> Diagnóstico médico: </h6>

@@ -10,6 +10,15 @@
             @csrf
             @method('POST')
 
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="cpf">C.P.F</label>
+                </div>
+                <div class="col-md-9">
+                    <input type="text">
+                </div>
+            </div>
+
             <div class="row ">
                 <h3>Motivo de consulta</h3>
                 <textarea name="motivo_consulta" cols="100% " rows="10"></textarea>
@@ -141,15 +150,15 @@
             </div>
             <div class="row ">
                 <h3>Antecedentes médicos/psiquiátricos</h3>
-                <textarea name="antecedentes_pessoais" cols="100% " rows="10 "></textarea>
+                <textarea name="ant_med_psiq" cols="100% " rows="10 "></textarea>
             </div>
             <div class="row ">
                 <h3>Antecedentes familiares</h3>
-                <textarea name="valoracao_estado" cols="100% " rows="10 "></textarea>
+                <textarea name="antecedentes_familiares" cols="100% " rows="10 "></textarea>
             </div>
             <div class="row ">
                 <h3>Relacionamento social/amoroso/laboral</h3>
-                <textarea name="hipotese" cols="100% " rows="10 "></textarea>
+                <textarea name="relacionamento_social" cols="100% " rows="10 "></textarea>
             </div>
             <div class="row ">
                 <h3>Valoração estado psicológico  </h3>

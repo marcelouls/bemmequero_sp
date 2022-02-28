@@ -10,6 +10,15 @@
             @csrf
             @method('POST')
 
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="cpf">C.P.F</label>
+                </div>
+                <div class="col-md-9">
+                    <input type="text">
+                </div>
+            </div>
+
             FICHA DE ATENDIMENTO _____/_____/_____
             <div>
                 <label for="queixas_principais">Queixas principais: </label>

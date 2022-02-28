@@ -11,7 +11,8 @@
     <form action="/paciente/store" method="post">
         @csrf
         @method('POST')
-    <div class="row">
+
+        <div class="row">
         <div class="col-md-3">
             <label>C.P.F.</label>
         </div>
