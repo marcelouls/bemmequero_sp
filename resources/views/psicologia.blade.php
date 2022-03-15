@@ -15,7 +15,7 @@
                     <label for="cpf">C.P.F</label>
                 </div>
                 <div class="col-md-9">
-                    <input type="text">
+                    <input type="text" name="cpf">
                 </div>
             </div>
 

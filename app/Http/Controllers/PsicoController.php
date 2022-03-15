@@ -18,7 +18,7 @@ class PsicoController extends Controller
 
         $teste = \App\Models\PsicoModel::create($data);
 
-        return \App\Models\teste::all();
+        return \App\Models\PsicoModel::all();
 
     }
 
