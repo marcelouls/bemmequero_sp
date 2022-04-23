@@ -24,7 +24,7 @@
                                 <img src="/img/pesoa.jpg" alt="logo">
                             </div>
 
-                            <a href="paciente" class="btn btn-success">
+                            <a href="paciente/create" class="btn btn-success">
                                 Cadastro
                             </a>
                         </div>

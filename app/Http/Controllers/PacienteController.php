@@ -3,15 +3,51 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Paciente;
 
 class PacienteController extends Controller
 {
+    private $objPaciente;
+
+    public function __construct()
+    {
+       $this->objPaciente=new Paciente();
+    }
+
+    public function index()
+    {
+        $paciente=$this->objPaciente->paginate(10);
+        return view('/teste', compact('paciente'));
+    }
+
+    public function create()
+    {
+        return view('paciente\create');
+    }
+
     public function store(Request $request){
 
-        $data = $request->all();
+        $reg=$this->objPaciente->create([
+            'cpf'=>$request->cpf,
+            'nome_paciente'=>$request->nome_paciente,
+            'fone'=>$request->fone,
+            'email'=>$request->email,
+            'sexo'=>$request->sexo,
+            'estado_civil'=>$request->estado_civil,
+            'data_nasc'=>$request->data_nasc,
+            'escolaridade'=>$request->escolaridade,
+            'endereco'=>$request->endereco,
+            'ocupacao_principal'=>$request->escolaridade
+        ]);
+        if($reg){
+            return redirect('teste');
+        }
 
-        $teste = \App\Models\Paciente::create($data);
+        // $data = $request->all();
 
-        return \App\Models\Paciente::all();
+        // $Paciente = \App\Models\Paciente::create($data);
+
+        // return view('teste');
     }
+
 }
