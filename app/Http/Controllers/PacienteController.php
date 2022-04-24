@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PacienteRequest;
 use Illuminate\Http\Request;
 use App\Models\Paciente;
 
@@ -25,7 +26,7 @@ class PacienteController extends Controller
         return view('paciente\create');
     }
 
-    public function store(Request $request){
+    public function store(PacienteRequest $request){
 
         $reg=$this->objPaciente->create([
             'cpf'=>$request->cpf,
@@ -37,7 +38,7 @@ class PacienteController extends Controller
             'data_nasc'=>$request->data_nasc,
             'escolaridade'=>$request->escolaridade,
             'endereco'=>$request->endereco,
-            'ocupacao_principal'=>$request->escolaridade
+            'ocupacao_principal'=>$request->ocupacao_principal
         ]);
         if($reg){
             return redirect('teste');
