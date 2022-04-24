@@ -18,7 +18,7 @@ class PacienteController extends Controller
     public function index()
     {
         $paciente=$this->objPaciente->paginate(10);
-        return view('/teste', compact('paciente'));
+        return view('/listapacientes', compact('paciente'));
     }
 
     public function create()
@@ -41,7 +41,7 @@ class PacienteController extends Controller
             'ocupacao_principal'=>$request->ocupacao_principal
         ]);
         if($reg){
-            return redirect('teste');
+            return redirect('listapacientes');
         }
 
         // $data = $request->all();

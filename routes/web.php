@@ -57,7 +57,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/teste' , 'App\Http\Controllers\PacienteController@index');
+Route::get('/listapacientes' , 'App\Http\Controllers\PacienteController@index');
 Route::post('/psicologia/store' , 'App\Http\Controllers\PsicoController@store');
 Route::get('paciente/create', 'App\Http\Controllers\PacienteController@create');
 Route::post('/paciente/store', 'App\Http\Controllers\PacienteController@store');
