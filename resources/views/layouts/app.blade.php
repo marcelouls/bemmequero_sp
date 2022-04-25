@@ -27,58 +27,16 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
-
-{{-- <style>
-    body {
-        padding: auto;
-        /* background-color: lightgray; */
+<style>
+    .navbar{
+        color:red;
     }
 
-    input[type=text] {
-        width: 100%;
-        border-color: cornflowerblue;
-        border-radius: 5px;
-    }
+</style>
 
-    input[type=checkbox] {
-        background-color: brown;
-        height: 18px;
-        width: 18px;
-    }
-
-    input[type=radio] {
-        height: 20px;
-        width: 20px;
-    }
-
-    textarea {
-        border-color: cornflowerblue;
-        border-radius: 5px;
-        height: 100px;
-        width: 100%;
-    }
-
-    h1,
-    h2,
-    h3,
-    h6 {
-        text-align: center;
-        color: rgb(120, 95, 143);
-    }
-
-    label {
-        display: inline-block;
-    } --}}
-{{--
-    /* button {
-        margin-top: 15px;
-        margin-left: 45%;
-    } */
-
-</style> --}}
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: rgb(150, 129, 213)">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}"> Bemmequero
                     {{-- {{ config('app.name', 'Bemmequero') }} --}}

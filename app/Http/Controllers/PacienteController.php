@@ -13,17 +13,30 @@ class PacienteController extends Controller
     public function __construct()
     {
        $this->objPaciente=new Paciente();
+       $this->middleware('auth');
     }
 
     public function index()
     {
         $paciente=$this->objPaciente->paginate(10);
-        return view('/listapacientes', compact('paciente'));
+        return view('paciente/index', compact('paciente'));
     }
 
     public function create()
     {
         return view('paciente\create');
+    }
+
+    public function edit($id){
+        $paciente=$this->objPaciente->find($id);
+        return view('paciente\create',compact('paciente'));
+    }
+
+    public function show($id)
+    {
+
+        $paciente=$this->objPaciente->find($id);
+        return view('\paciente\show', compact('paciente'));
     }
 
     public function store(PacienteRequest $request){
@@ -41,14 +54,26 @@ class PacienteController extends Controller
             'ocupacao_principal'=>$request->ocupacao_principal
         ]);
         if($reg){
-            return redirect('listapacientes');
+            return redirect('paciente');
         }
 
-        // $data = $request->all();
+    }
+    public function update(PacienteRequest $request, $id)
+    {
+        $this->objPaciente->where(['id'=>$id])->update([
+            'cpf'=>$request->cpf,
+            'nome_paciente'=>$request->nome_paciente,
+            'fone'=>$request->fone,
+            'email'=>$request->email,
+            'sexo'=>$request->sexo,
+            'estado_civil'=>$request->estado_civil,
+            'data_nasc'=>$request->data_nasc,
+            'escolaridade'=>$request->escolaridade,
+            'endereco'=>$request->endereco,
+            'ocupacao_principal'=>$request->ocupacao_principal
+        ]);
 
-        // $Paciente = \App\Models\Paciente::create($data);
-
-        // return view('teste');
+        return redirect('paciente');
     }
 
 }

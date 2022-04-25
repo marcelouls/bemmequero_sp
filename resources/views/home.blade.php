@@ -20,13 +20,16 @@
                             <h2 class="card-title">
                                 Pacientes
                             </h2>
+
                             <div class="logo">
-                                <img src="/img/pesoa.jpg" alt="logo">
+                                <a href="paciente">
+                                    <img src="/img/pesoa.jpg" alt="logo">
+                                </a>
                             </div>
 
-                            <a href="paciente/create" class="btn btn-success">
-                                Cadastro
-                            </a>
+
+
+
                         </div>
 
 

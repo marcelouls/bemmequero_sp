@@ -5,6 +5,12 @@
 
     @section('content')
 
+    <div class="text-center" style="margin-bottom: 20px">
+        <a href="paciente/create">
+        <button class="btn btn-lg btn-success center">Cadastrar Paciente</button>
+    </a>
+    </div>
+
     <div class="container col-8 mt-15 p-10">
     <table class="table">
         <thead>
@@ -25,7 +31,12 @@
                 <td>{{$pacientes->email}}</td>
                 <td>{{$pacientes->fone}}</td>
                 <td>
+                    <a href="{{url("paciente/$pacientes->id")}}">
+                    <div class="btn btn-dark btn-sm">Visualizar</div>
+                    </a>
+                <a href="{{url("paciente/$pacientes->id/edit")}}">
                     <button class="btn btn-primary btn-sm">Editar</button>
+                </a>
                     <button class="btn btn-success btn-sm">Atender</button>
 
                 </td>
