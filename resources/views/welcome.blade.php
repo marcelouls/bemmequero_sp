@@ -12,18 +12,27 @@
                 font-family: 'Nunito', sans-serif;
 
             }
-            .container{
-                margin: 0 25%;
+
+            img{
+                height: 70%;
+                width: 70%;
+                margin: center;
+            }
+
+            @media screen and (max-width: 600px) {
+                img {
+                    height: 100%;
+                    width: 100%;
+                    margin-top:140px;
+                     }
 
             }
-            img{
-                height: 90%;
-                width: 90%;
-            }
         </style>
+
+
     </head>
     <body>
-        <div class="container" >
+        <div class="text-center" >
             <a href="{{route('login')}}"><img src="/img/processed.jpeg" alt="logo"></a>
         </div>
     </body>

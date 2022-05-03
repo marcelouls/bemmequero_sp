@@ -62,8 +62,12 @@ Route::post('/psicologia/store' , 'App\Http\Controllers\PsicoController@store');
 Route::get('paciente/create', 'App\Http\Controllers\PacienteController@create');
 Route::post('/paciente/store', 'App\Http\Controllers\PacienteController@store');
 Route::get('findpsico/store','App\Http\Controllers\PsicoController@store');
+Route::get('/psicologia','App\Http\Controllers\PsicoController@show');
 // Route::get('paciente/show', '\App\Http\Controllers\PacienteController@show');
 // Route::get('paciente/show','App\Http\Controllers\PacienteController@show');
 
 Route::resource('/paciente', 'App\Http\Controllers\PacienteController');
+Route::resource('/psicologia', 'App\Http\Controllers\PsicoController');
+
+
 

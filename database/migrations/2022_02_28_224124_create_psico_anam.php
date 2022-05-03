@@ -4,6 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+use function PHPUnit\Framework\once;
+
 class CreatePsicoAnam extends Migration
 {
     /**
@@ -53,8 +55,9 @@ class CreatePsicoAnam extends Migration
             $table->string('objetivo_terapeutico');
             $table->string('plano_intervencao');
             $table->string('observacoes');
+            $table->unsignedBigInteger('id_paciente');
 
-            $table->string('cpf');
+            $table->foreign('id_paciente')->references('id')->on('paciente');
         });
     }
 

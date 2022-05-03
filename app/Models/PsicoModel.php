@@ -12,5 +12,10 @@ class PsicoModel extends Model
     protected $table = 'psico_anam';
 
     protected $fillable = [
-'motivo_consulta',  'inicio_queixa','mudanca_queixa','sintomas_queixa','sintomas_queixa','tipo_sono', 'horas_sono' ,'dif_inicio', 'acorda_noite', 'acorda_manha', 'exceso_sono', 'pesadelos', 'camina', 'tipo_alimentacao', 'outro_tipo_alimentacao','descontrole_alimentar', 'ingesta_variavel' ,'medicamentos', 'vomitos', 'atividade_fisica', 'frequencia_atividade','esforco','objetivo_fisico','outro_objetivo','ant_med_psiq','antecedentes_familiares','relacionamento_social','iniciar_desistir','concientizacao','percepcao_corporal', 'historico_dietas','hipotese_diagnostica','objetivo_terapeutico', 'plano_intervencao','observacoes' ,'cpf'    ];
+'motivo_consulta',  'inicio_queixa','mudanca_queixa','sintomas_queixa','sintomas_queixa','tipo_sono', 'horas_sono' ,'dif_inicio', 'acorda_noite', 'acorda_manha', 'exceso_sono', 'pesadelos', 'camina', 'tipo_alimentacao', 'outro_tipo_alimentacao','descontrole_alimentar', 'ingesta_variavel' ,'medicamentos', 'vomitos', 'atividade_fisica', 'frequencia_atividade','esforco','objetivo_fisico','outro_objetivo','ant_med_psiq','antecedentes_familiares','relacionamento_social','iniciar_desistir','concientizacao','percepcao_corporal', 'historico_dietas','hipotese_diagnostica','objetivo_terapeutico', 'plano_intervencao','observacoes' ,'id_paciente'    ];
+
+public function relPaciente()
+{
+    return $this->hasOne('App\Paciente', 'id_paciente','id');
+}
 }

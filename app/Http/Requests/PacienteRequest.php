@@ -25,7 +25,7 @@ class PacienteRequest extends FormRequest
     public function rules()
     {
         return [
-            'cpf' => ['required',"unique:paciente,cpf,($this->id)",'digits:11','numeric',new CpfOk],
+            'cpf' => ['required',"unique:paciente,cpf,{$this->id}",'digits:11','numeric',new CpfOk],
             'nome_paciente' => ['required','string'],
             'email' => ['required', 'email'],
             'fone' => ['required','numeric']

@@ -11,8 +11,8 @@
     </a>
     </div>
 
-    <div class="container col-8 mt-15 p-10">
-    <table class="table">
+    <div class="lispac container col-8 " id="lispac">
+    <table class="table" >
         <thead>
           <tr>
             <th scope="col">Cod.</th>
@@ -32,12 +32,12 @@
                 <td>{{$pacientes->fone}}</td>
                 <td>
                     <a href="{{url("paciente/$pacientes->id")}}">
-                    <div class="btn btn-dark btn-sm">Visualizar</div>
+                    <div class="btn btn-dark btn-sm" >Visualizar</div>
                     </a>
                 <a href="{{url("paciente/$pacientes->id/edit")}}">
                     <button class="btn btn-primary btn-sm">Editar</button>
                 </a>
-                    <button class="btn btn-success btn-sm">Atender</button>
+                    {{-- <button class="btn btn-success btn-sm">Atender</button> --}}
 
                 </td>
               </tr>
@@ -49,7 +49,41 @@
       </table>
 
     </div>
-{{$paciente->links()}}
+    <div class="lismob" >
+    <table class="table" >
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col"> </th>
+          </tr>
+        </thead>
+        <tbody>
+            @foreach ($paciente as $pacientes )
+
+            <tr>
+                <td>{{$pacientes->nome_paciente}}</td>
+
+                <td>
+                    <a href="{{url("paciente/$pacientes->id")}}">
+                    <div class="btn btn-dark iguais" style="margin-bottom: 3px">Visualizar</div>
+                    </a>
+                <a href="{{url("paciente/$pacientes->id/edit")}}">
+                    <button class="btn btn-primary iguais">Editar</button>
+                </a>
+                    {{-- <button class="btn btn-success btn-sm">Atender</button> --}}
+
+                </td>
+              </tr>
+
+            @endforeach
+
+
+        </tbody>
+      </table>
+    </div>
+<div>
+{{ $paciente->links() }}
+</div>
 
 @endsection
 
